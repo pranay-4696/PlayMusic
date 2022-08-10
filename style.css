@@ -33,12 +33,10 @@ button
 }
 button:hover
 {
-  width: 160px;
-  height: 170px;
+  box-shadow: 0 3px 4px 0 #DBEDF3;
   border-radius: 20px;
-  color: #DBEDF3;
   text-shadow: 3px 0 #DA0463;
-  transition: 1.1s;
+  transition: 0.8s;
 }
 
 }
