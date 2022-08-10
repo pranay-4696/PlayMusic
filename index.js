@@ -1,17 +1,13 @@
-document.querySelectorAll(".btn")[5].addEventListener("click",onClick);
-var k=document.querySelectorAll(".btn").length;
-for(var i=0;i<6;i++)
+var k=document.querySelectorAll(".drum").length;
+for(var i=0;i<k;i++)
 {
-  document.querySelectorAll(".btn")[i].addEventListener("click",onClick);
-}
-
-
-function onClick()
-{
+  document.querySelectorAll(".drum")[i].addEventListener("click",onClick);
+   function onClick()
+   {
  var n= this.innerHTML;
   playSound(n);
+   }
 }
-
 document.addEventListener("keypress",function(e){
   playSound(e.key);
 });
@@ -27,27 +23,27 @@ function playSound(n)
         break;
       case 'a' : 
       audio=new Audio("sounds/tom-2.mp3");
-      audio.play()
+      audio.play();
         break;
       case 's' : 
       audio=new Audio("sounds/tom-3.mp3");
-      audio.play()
+      audio.play();
         break;    
       case 'd' : 
       audio=new Audio("sounds/tom-4.mp3");
-      audio.play()
+      audio.play();
         break;      
       case 'j' : 
       audio=new Audio("sounds/snare.mp3");
-      audio.play()
+      audio.play();
         break;
       case 'k' : 
        audio=new Audio("sounds/crash.mp3");
-       audio.play()
+       audio.play();
         break;    
       case 'l' : 
        audio=new Audio("sounds/kick-bass.mp3");
-       audio.play()
+       audio.play();
         break;
       default:
         console.log("default ");
